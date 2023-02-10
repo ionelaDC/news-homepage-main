@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --Soft-orange: hsl(35, 90%, 61%);
+    --Soft-red: hsl(5, 91%, 60%);
+  
+    --Off-white: hsl(36, 100%, 99%);
+    --Gray-blue: hsl(233, 15%, 76%);
+    --Dark-gray-blue: hsl(236, 15%, 34%);
+    --Very-dark-blue: hsl(240, 100%, 2%);
+  
+    --font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    font-size: 15px;
+    font-family: var(--font-family);
+    min-height: 100vh;
+    color: var(--Dark-gray-blue);
+    background: var(--Off-white);
+  }
+  
+  .container {
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .inactive {
+    display: none;
+  }
+  
+  /* Header */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  
+  .navbar__logo--container {
+    width: 50px;
+    max-width: 160px;
+  }
+  
+  .navbar__logo {
+    width: 100%;
+    display: block;
+  }
+  
+  .navbar__hamburger {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: var(--Very-dark-blue);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  
+  /* Mobile menu */
+  
+  
+  /* desktop menu */
+  .navbar__menu--desktop {
+    display: none;
+  }
+  
+  .navbar__menu__ul {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar__menu__li {
+    list-style: none;
+  }
+  
+  .navbar__menu__links {
+    text-decoration: none;
+    color: var(--Dark-gray-blue);
+  }
+  
+  .navbar__menu__links:hover {
+    color: var(--Soft-orange);
+  }
+  
+  /* Principal top article - Web3 */
+  .article__web3 {
+    margin-bottom: 4rem;
+  }
+  
+  .article__web3__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .article__web3__img--desktop {
+    display: none;
+  }
+  
+  .article__web3__title {
+    width: 100%;
+    color: var(--Very-dark-blue);
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+  
+  .article__web3__text {
+    font-size: 0.90rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .article__web3__cta {
+    background-color: var(--Soft-red);
+    color: var(--Off-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding: 15px 35px;
+    border: none;
+  }
+  
+  .article__web3__cta:hover {
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+  }
+  
+  /* Secundary top article - Aside articles */
+  .aside {
+    background-color: var(--Very-dark-blue);
+    padding: 20px;
+    margin-bottom: 4rem;
+  }
+  
+  .aside__title {
+    color: var(--Soft-orange);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .aside__article__titles {
+    color: var(--Off-white);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .aside__article__titles:hover {
+    color: var(--Soft-orange);
+  }
+  
+  .aside__article__texts {
+    color: var(--Gray-blue);
+    font-size: 0.90rem;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
+  hr {
+    color: var(--Gray-blue);
+    margin: 25px 0;
+  }
+  
+  /* Bottom articles */
+  .bottom {
+    margin-bottom: 4rem;
+  }
+  
+  .bottom__article {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .bottom__article__img {
+    max-width: 100px;
+  }
+  
+  .bottom__article__numbers {
+    color: var(--Gray-blue);
+    font-size: 2rem;
+  }
+  
+  .bottom__article__titles {
+    display: block;
+    color: var(--Very-dark-blue);
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-decoration: none;
+    margin: 15px 0;
+  }
+  
+  .bottom__article__titles:hover {
+    color: var(--Soft-red);
+  }
+  
+  .bottom__article__texts {
+    font-size: 0.90rem;
+    line-height: 1.5;
+  }
+ 
+  .attribution {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+  }

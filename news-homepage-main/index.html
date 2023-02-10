@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a class="navbar__logo--container" href="./index.html">
+        <img class="navbar__logo" src="./assets/images/logo.svg" alt="logo">
+      </a>
+
+      <div class="navbar__hamburger" id="burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <div class="navbar__menu--mobile inactive">
+        <ul class="navbar__menu__ul--m">
+          <li class="navbar__menu__li--m">
+            <a href="#" class="navbar__menu__links--m">Home</a>
+          </li>
+          <li class="navbar__menu__li--m">
+            <a href="#" class="navbar__menu__links--m">New</a>
+          </li>
+          <li class="navbar__menu__li--m">
+            <a href="#" class="navbar__menu__links--m">Popular</a>
+          </li>
+          <li class="navbar__menu__li--m">
+            <a href="#" class="navbar__menu__links--m">Trending</a>
+          </li>
+          <li class="navbar__menu__li--m">
+            <a href="#" class="navbar__menu__links--m">Categories</a>
+          </li>
+        </ul>
+      </div>
+               
+      <div class="navbar__menu--desktop">
+        <ul class="navbar__menu__ul">
+          <li class="navbar__menu__li">
+            <a href="#" class="navbar__menu__links">Home</a>
+          </li>
+          <li class="navbar__menu__li">
+            <a href="#" class="navbar__menu__links">New</a>
+          </li>
+          <li class="navbar__menu__li">
+            <a href="#" class="navbar__menu__links">Popular</a>
+          </li>
+          <li class="navbar__menu__li">
+            <a href="#" class="navbar__menu__links">Trending</a>
+          </li>
+          <li class="navbar__menu__li">
+            <a href="#" class="navbar__menu__links">Categories</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main__container container">
+    <section class="top">
+      <!--Principal top article-->
+      <article class="article__web3">
+        <img class="article__web3__img" src="./assets/images/image-web-3-mobile.jpg" alt="Image web3">
+        <img class="article__web3__img--desktop" src="./assets/images/image-web-3-desktop.jpg" alt="Image web3">
+
+        <div class="article__web3__texts--container">
+          <div class="article__web3__title--container">
+            <h1 class="article__web3__title">The Bright Future of Web 3.0?</h1>
+          </div>
+
+          <div class="article__web3__text--btn">
+            <p class="article__web3__text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of thepeople. But is it really fulfilling its promise?</p>
+            <button class="article__web3__cta">Read more</button>
+          </div>
+        </div> 
+      </article>
+
+      <!--Secundary top article-->
+      <aside class="aside">
+        <h2 class="aside__title">New</h2>
+
+        <div class="aside__article">
+          <a class="aside__article__titles" href="#">Hydrogen VS Electric Cars</a>
+          <p class="aside__article__texts">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <hr>
+        <div class="aside__article">
+          <a class="aside__article__titles" href="#">The Downsides of AI Artistry</a>
+          <p class="aside__article__texts">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <hr>
+        <div class="aside__article">
+          <a class="aside__article__titles" href="#">Is VC Funding Drying Up?</a>
+          <p class="aside__article__texts">Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          </p>
+        </div>
+      </aside>
+    </section>
+    
+    <!--Bottom articles-->
+    <section class="bottom">
+      <div class="bottom__article">
+        <img class="bottom__article__img" src="./assets/images/image-retro-pcs.jpg" alt="">
+
+        <div class="bottom__article__texts--container">
+          <h3 class="bottom__article__numbers">01</h3>
+          <a class="bottom__article__titles" href="#">Reviving Retro PCs</a>
+          <p class="bottom__article__texts">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="bottom__article">
+        <img class="bottom__article__img" src="./assets/images/image-top-laptops.jpg" alt="">
+
+        <div class="bottom__article__texts--container">
+          <h3 class="bottom__article__numbers">02</h3>
+          <a class="bottom__article__titles" href="#">Top 10 Laptops of 2022</a>
+          <p class="bottom__article__texts">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="bottom__article">
+        <img class="bottom__article__img" src="./assets/images/image-gaming-growth.jpg" alt="">
+
+        <div class="bottom__article__texts--container">
+          <h3 class="bottom__article__numbers">03</h3>
+          <a class="bottom__article__titles" href="#">The Growth of Gaming</a>
+          <p class="bottom__article__texts">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Chifan Ionela</a>.
+     
+    </footer>
+
+    <script src="./script.js"></script>
+  </main>
+</body>
+
+</html>
